@@ -3,7 +3,9 @@ jobs:
   build:
     docker:
       - image: circleci/node:latest
+    working_directory: ~/my-website
     steps:
+      - checkout
       - run:
           name: Deployment by gulp deploy task
           command: npm run deploy
