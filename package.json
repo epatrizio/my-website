@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is source code for my website (personal home page), built with Gulp",
   "config": {
-    "target_url": ""
+    "target_url": "https://epatrizio.github.io/my-website/"
   },
   "scripts": {
     "build": "gulp build",

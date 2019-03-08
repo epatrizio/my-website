@@ -80,5 +80,13 @@ gulp.task('image-min', ['clean-img'], function () {
     .pipe(gulp.dest('./public/img'));
 });
 
+gulp.task('deploy', ['build'], function(cb) {
+    var ghPages = require('gh-pages');
+
+    ghPages.publish('./public', {
+        message: 'Auto-generated gulp commit'
+    }, cb);
+});
+
 gulp.task('build-fast', ['clean', 'css', 'js', 'html-min']);
 gulp.task('build', ['build-fast', 'copy-fonts', 'image-min']);
