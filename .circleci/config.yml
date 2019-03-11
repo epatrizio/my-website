@@ -9,6 +9,9 @@ jobs:
       - run:
           name: Npm install (node_modules directory)
           command: npm install
+      - add_ssh_keys:
+          fingerprints:
+            - "26:c1:b6:cb:dd:e8:1b:89:99:50:40:9f:09:be:cf:d6"
       - deploy:
           name: Deployment by gulp deploy task
           command: npm run deploy
