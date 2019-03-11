@@ -1,65 +1,36 @@
 {
-  "_args": [
-    [
-      "foundation-icons@^1.0.1",
-      "/home/Js/my-website"
-    ]
-  ],
-  "_from": "foundation-icons@>=1.0.1 <2.0.0",
+  "_from": "foundation-icons@^1.0.1",
   "_id": "foundation-icons@1.0.1",
-  "_inCache": true,
-  "_installable": true,
+  "_inBundle": false,
+  "_integrity": "sha1-AGqOeAjOlk4DJvD0xJ1lPUhAxN8=",
   "_location": "/foundation-icons",
-  "_nodeVersion": "5.0.0",
-  "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/foundation-icons-1.0.1.tgz_1470644026177_0.7246730767656118"
-  },
-  "_npmUser": {
-    "email": "patomation@gmail.com",
-    "name": "patomation"
-  },
-  "_npmVersion": "3.3.9",
   "_phantomChildren": {},
   "_requested": {
-    "name": "foundation-icons",
+    "type": "range",
+    "registry": true,
     "raw": "foundation-icons@^1.0.1",
+    "name": "foundation-icons",
+    "escapedName": "foundation-icons",
     "rawSpec": "^1.0.1",
-    "scope": null,
-    "spec": ">=1.0.1 <2.0.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": "^1.0.1"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/foundation-icons/-/foundation-icons-1.0.1.tgz",
   "_shasum": "006a8e7808ce964e0326f0f4c49d653d4840c4df",
-  "_shrinkwrap": null,
   "_spec": "foundation-icons@^1.0.1",
-  "_where": "/home/Js/my-website",
+  "_where": "/home/circleci/my-website",
   "author": {
     "name": "Patrick Kelly"
   },
-  "dependencies": {},
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Foundation Icon Fonts 3",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "006a8e7808ce964e0326f0f4c49d653d4840c4df",
-    "tarball": "https://registry.npmjs.org/foundation-icons/-/foundation-icons-1.0.1.tgz"
-  },
-  "gitHead": "f7ddef606c90b0807a29f2d7da8ff6ddb8210a0a",
   "license": "ISC",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "patomation",
-      "email": "patomation@gmail.com"
-    }
-  ],
   "name": "foundation-icons",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
