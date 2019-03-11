@@ -7,5 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Npm install (node_modules directory)
+          command: npm install
+      - run:
           name: Deployment by gulp deploy task
           command: npm run deploy
