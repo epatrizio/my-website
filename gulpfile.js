@@ -85,7 +85,7 @@ gulp.task('deploy', ['build'], function(cb) {
 
     ghPages.publish('./public', {
         user: {
-            name: 'epatrizio deployment bot',
+            name: 'epatrizio',
             email: 'epatrizio@mpns.fr'
         },
         message: 'Auto-generated gulp commit'

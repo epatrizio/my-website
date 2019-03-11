@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: circleci/node:latest
     working_directory: ~/my-website
+    filters:
+      branches:
+        only: master
     steps:
       - checkout
       - run:
