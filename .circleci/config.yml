@@ -9,6 +9,6 @@ jobs:
       - run:
           name: Npm install (node_modules directory)
           command: npm install
-      - run:
+      - deploy:
           name: Deployment by gulp deploy task
           command: npm run deploy

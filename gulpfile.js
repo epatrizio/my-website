@@ -84,6 +84,10 @@ gulp.task('deploy', ['build'], function(cb) {
     var ghPages = require('gh-pages');
 
     ghPages.publish('./public', {
+        user: {
+            name: 'epatrizio',
+            email: 'epatrizio@mpns.fr'
+        },
         message: 'Auto-generated gulp commit'
     }, cb);
 });
