@@ -38,7 +38,7 @@ gulp.task('css', ['clean'], function () {
     .pipe(rename('site.min.css'))
     .pipe(gulp.dest('./public/css'));
   // concat and minify CSS files and stream CSS
-  return gulp.src('./app/css/**/*.css')
+  gulp.src('./app/css/**/*.css')
     .pipe(concat('app.css'))
     .pipe(cleanCSS())
     .pipe(rename('app.min.css'))
