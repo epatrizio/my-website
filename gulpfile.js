@@ -88,7 +88,7 @@ gulp.task('deploy', ['build'], function(cb) {
             name: 'epatrizio',
             email: 'epatrizio@mpns.fr'
         },
-        message: 'Auto-generated gulp commit'
+        message: 'Auto-generated gulp commit [ci skip]'
     }, cb);
 });
 
