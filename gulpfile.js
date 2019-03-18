@@ -38,7 +38,7 @@ gulp.task('css', ['clean'], function () {
     .pipe(rename('site.min.css'))
     .pipe(gulp.dest('./public/css'));
   // concat and minify CSS files and stream CSS
-  gulp.src('./app/css/**/*.css')
+  return gulp.src('./app/css/**/*.css')
     .pipe(concat('app.css'))
     .pipe(cleanCSS())
     .pipe(rename('app.min.css'))
@@ -55,7 +55,7 @@ gulp.task('js', ['clean'], function () {
   gulp.src('./node_modules/jquery/dist/jquery.min.js')
     .pipe(gulp.dest('./public/js'));
   // foundation
-  gulp.src('./node_modules/foundation-sites/dist/js/foundation.min.js')
+  return gulp.src('./node_modules/foundation-sites/dist/js/foundation.min.js')
     .pipe(gulp.dest('./public/js'));
 });
 
