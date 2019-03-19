@@ -28,30 +28,25 @@ gulp.task('clean-img', function (cb) {
   ], cb);
 });
 
+gulp.task('clean-fonts', function (cb) {
+  require('del')([
+    './public/fonts',
+  ], cb);
+});
+
 gulp.task('css', ['clean'], function () {
   var cleanCSS = require('gulp-clean-css');
-  // SCSS
+  // SASS
   var sass = require('gulp-sass');
-  gulp.src('./app/scss/**/*.scss')
+  return gulp.src('./app/scss/**/*.scss')
     .pipe(sass({includePaths: sassPaths}).on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(rename('site.min.css'))
     .pipe(gulp.dest('./public/css'));
-  // concat and minify CSS files and stream CSS
-  return gulp.src('./app/css/**/*.css')
-    .pipe(concat('app.css'))
-    .pipe(cleanCSS())
-    .pipe(rename('app.min.css'))
-    .pipe(gulp.dest('./public/css'));
-});
-
-gulp.task('copy-fonts', ['clean'], function() {
-  return gulp.src(['./node_modules/foundation-icons/**'])
-    .pipe(gulp.dest('./public/fonts/foundation-icons'));
 });
 
 gulp.task('js', ['clean'], function () {
-    // jquery
+  // jquery
   gulp.src('./node_modules/jquery/dist/jquery.min.js')
     .pipe(gulp.dest('./public/js'));
   // foundation
@@ -65,6 +60,11 @@ gulp.task('html-min', ['clean'], function() {
   return gulp.src('./app/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./public'));
+});
+
+gulp.task('copy-fonts', ['clean-fonts'], function() {
+  return gulp.src(['./node_modules/foundation-icons/**'])
+    .pipe(gulp.dest('./public/fonts/foundation-icons'));
 });
 
 gulp.task('image-min', ['clean-img'], function () {
