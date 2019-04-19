@@ -14,6 +14,7 @@ gulp.task('clean', function (cb) {
     // delete everything under public directory
     './public/*',
     // except images and docs, very long to generate
+    '!./public/docs',
     '!./public/img',
     '!./public/fonts',
     // except Git files
@@ -25,6 +26,12 @@ gulp.task('clean', function (cb) {
 gulp.task('clean-img', function (cb) {
   require('del')([
     './public/img',
+  ], cb);
+});
+
+gulp.task('clean-docs', function (cb) {
+  require('del')([
+    './public/docs',
   ], cb);
 });
 
@@ -62,6 +69,11 @@ gulp.task('html-min', ['clean'], function() {
     .pipe(gulp.dest('./public'));
 });
 
+gulp.task('copy-docs', ['clean-docs'], function() {
+  return gulp.src(['./app/docs/**/*'])
+    .pipe(gulp.dest('./public/docs'));
+});
+
 gulp.task('copy-fonts', ['clean-fonts'], function() {
   return gulp.src(['./node_modules/foundation-icons/**'])
     .pipe(gulp.dest('./public/fonts/foundation-icons'));
@@ -93,4 +105,4 @@ gulp.task('deploy', ['build'], function(cb) {
 });
 
 gulp.task('build-fast', ['clean', 'css', 'js', 'html-min']);
-gulp.task('build', ['build-fast', 'copy-fonts', 'image-min']);
+gulp.task('build', ['build-fast', 'copy-docs', 'copy-fonts', 'image-min']);
