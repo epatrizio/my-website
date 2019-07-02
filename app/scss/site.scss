@@ -68,42 +68,36 @@
 
 // Custom styles
 
-hr {
-	border: 1px solid;
-}
-
 h1 {
 	font-family: "Courier New", monospace;
 	font-weight: bold;
-	font-size:40px;
+	font-size:30px;
 	color:#cbe00c;
-	border-bottom:1px dashed #ccc;
-	padding-top:20px;
-	padding-bottom:20px;
 }
 
 h2 {
-	font-family: "Courier New", monospace;
 	font-weight: bold;
-	font-size:25px;
-	color:#cbe00c;
-	padding-top:10px;
-	padding-bottom:10px;
+	font-size:15px;
 }
 
 h3 {
 	font-family: "Courier New", monospace;
 	font-weight: bold;
-	font-size:20px;
+	font-size:25px;
 }
 
-.banner {
-	padding-top:10px;
-	padding-bottom:10px;	
+hr {
+	border-bottom:1px dashed #ddd;
 }
 
 .icons {
 	font-size:40px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.icons25 {
+	font-size:25px;
 }
 
 .linkedin-color {
@@ -118,8 +112,17 @@ h3 {
 	color:#00aced;
 }
 
+header {
+	font-family: "Courier New", monospace;
+	font-weight: bold;
+	font-size:40px;
+	color:#cbe00c;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
 footer {
-	background:#eee;
+	background:#ddd;
 	font-size:smaller;
 	width:100%;
 	text-align:center;
