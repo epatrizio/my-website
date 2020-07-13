@@ -1,32 +1,35 @@
 {
-  "_from": "foundation-icons@^1.0.1",
+  "_args": [
+    [
+      "foundation-icons@1.0.1",
+      "/mnt/c/Users/epatrizio/Projects/Js/my-website"
+    ]
+  ],
+  "_from": "foundation-icons@1.0.1",
   "_id": "foundation-icons@1.0.1",
   "_inBundle": false,
   "_integrity": "sha1-AGqOeAjOlk4DJvD0xJ1lPUhAxN8=",
   "_location": "/foundation-icons",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "foundation-icons@^1.0.1",
+    "raw": "foundation-icons@1.0.1",
     "name": "foundation-icons",
     "escapedName": "foundation-icons",
-    "rawSpec": "^1.0.1",
+    "rawSpec": "1.0.1",
     "saveSpec": null,
-    "fetchSpec": "^1.0.1"
+    "fetchSpec": "1.0.1"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/foundation-icons/-/foundation-icons-1.0.1.tgz",
-  "_shasum": "006a8e7808ce964e0326f0f4c49d653d4840c4df",
-  "_spec": "foundation-icons@^1.0.1",
-  "_where": "/home/circleci/my-website",
+  "_spec": "1.0.1",
+  "_where": "/mnt/c/Users/epatrizio/Projects/Js/my-website",
   "author": {
     "name": "Patrick Kelly"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "Foundation Icon Fonts 3",
   "license": "ISC",
   "main": "index.js",
