@@ -2,9 +2,13 @@
 
 This is my personal home page managed by github pages!
 
-## General informations
+## Current status
 
-* Based on the repository [sandbox-static-website](https://github.com/epatrizio/sandbox-static-website)
+**ARCHIVE**
+
+My website is [here](https://github.com/epatrizio/epatrizio.github.io) ;-)
+
+## General informations
 
 * Automatic build managed by [CircleCI](https://circleci.com)
     * Add a `.circleci` directory in your projet
